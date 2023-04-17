@@ -1,0 +1,92 @@
+#vwidget {
+    /*font-family: "Roboto", sans-serif;*/
+    font-size: 13px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 300px;
+    background-color: #fffdfd;
+    backdrop-filter: blur(3px);
+    box-shadow: 2px 2px 10px 0px #000000;
+    position: fixed;
+    top: -400px;
+    left: 20px;
+    z-index: 99;
+}
+
+.fs-12 {
+    font-size: 14px!important;
+}
+
+
+/*
+#vwidget {
+  background: hsla(0,0%,100%,.6);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+*/
+
+.vwidget__name {
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px !important;
+    font-size: 15px !important;
+}
+
+.vwidget__name,
+.vwidget__action,
+.vwidget__when {
+    margin: 5px 0px;
+}
+
+.vwidget__whenwrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vwidget__verifiedby {
+    display: flex;
+    /*align-items: center;
+  margin: 5px 0px;*/
+    text-align: right;
+    margin-right: 5px !important;
+}
+
+.vwidget__verifiedby span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2196f3;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.vwidget__verifiedtick {
+    fill: #2196f3;
+    margin-right: 5px;
+}
+
+@keyframes keyframes-slide-in {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes keyframes-slide-out {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: -200px;
+    }
+}
+
+.vwidget-slide-in {
+    animation: keyframes-slide-in 0.8s ease forwards;
+}
+
+.vwidget-slide-out {
+    animation: keyframes-slide-out 0.8s ease forwards;
+}
